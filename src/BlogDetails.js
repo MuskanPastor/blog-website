@@ -7,11 +7,11 @@ import LikeButton from './Likebutton';
 const BlogDetails = () => {
     const { id } = useParams();
     const navigate = useNavigate();
-    const { blogs: blog, isPending, error } = useFetch("http://localhost:5000/blogs/" + id);
+    const { blogs: blog, isPending, error } = useFetch("http://172.20.0.165:5000/blogs/" + id);
 
     const handleDelete = () => {
         if (window.confirm("Are you sure you want to delete this blog?")) {
-            fetch("http://localhost:5000/blogs/" + blog.id, {
+            fetch("http://172.20.0.165:5000/blogs/" + blog.id, {
                 method: 'DELETE'
             })
             .then(() => {
