@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import LikeButton from './Likebutton';
 
 const BlogDetails = () => {
+ 
+
     const { id } = useParams();
     const navigate = useNavigate();
     const { blogs: blog, isPending, error } = useFetch("https://cozy-squirrel-b2befd.netlify.app/blogs/" + id);

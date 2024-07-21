@@ -4,6 +4,8 @@ import useFetch from "./UseFetch.js"
 
 
 const Home = () => { 
+ 
+
     const{blogs,isPending,error}=useFetch("https://cozy-squirrel-b2befd.netlify.app/blogs")
     return ( 
         <div className="home">
