@@ -145,7 +145,7 @@ const Create = () => {
     const blog = { title, body, author, imageUrl };
 
     setTimeout(() => {
-      fetch("https://cozy-squirrel-b2befd.netlify.app/", {
+      fetch("https://cozy-squirrel-b2befd.netlify.app/blogs", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(blog),

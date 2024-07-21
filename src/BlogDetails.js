@@ -7,11 +7,11 @@ import LikeButton from './Likebutton';
 const BlogDetails = () => {
     const { id } = useParams();
     const navigate = useNavigate();
-    const { blogs: blog, isPending, error } = useFetch("https://cozy-squirrel-b2befd.netlify.app/" + id);
+    const { blogs: blog, isPending, error } = useFetch("https://cozy-squirrel-b2befd.netlify.app/blogs/" + id);
 
     const handleDelete = () => {
         if (window.confirm("Are you sure you want to delete this blog?")) {
-            fetch("https://cozy-squirrel-b2befd.netlify.app/" + blog.id, {
+            fetch("https://cozy-squirrel-b2befd.netlify.app/blogs/" + blog.id, {
                 method: 'DELETE'
             })
             .then(() => {
