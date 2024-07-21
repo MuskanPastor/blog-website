@@ -145,7 +145,7 @@ const Create = () => {
     const blog = { title, body, author, imageUrl };
 
     setTimeout(() => {
-      fetch("http://172.20.0.165:5000/blogs", {
+      fetch("https://172.20.0.165:5000/blogs", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(blog),
