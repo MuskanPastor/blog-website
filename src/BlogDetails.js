@@ -32,7 +32,7 @@ const BlogDetails = () => {
                 <article className="border border-gray-200 p-6 rounded-lg bg-white shadow-md">
                 {blog.imageUrl && (
             <img
-              src={blog.imageUrl}
+              src={blog.imageUrl} alt="img"
               className="w-full h-64 object-cover mb-4 rounded-md"
             />
           )}

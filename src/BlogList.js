@@ -48,7 +48,7 @@ const BlogList = (props) => {
               <Link to={`/blogs/${blog.id}`}>
                 {blog.imageUrl && (
                   <div className="mr-4">
-                    <img src={blog.imageUrl} className="w-24 h-24 rounded-full" alt={blog.title} />
+                    <img src={blog.imageUrl} alt={blog.title} className="w-24 h-24 rounded-full" />
                   </div>
                 )}
                 <div>
