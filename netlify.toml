@@ -1,15 +1,8 @@
 [build]
-  # The build command to run
   command = "npm run build"
-  # The directory to publish
   publish = "build"
 
-[build.environment]
-  # Optional: Set environment variables
-  NODE_VERSION = "14"  # Specify your Node.js version if needed
-
 [[redirects]]
-  # Redirect all requests to the root of your single-page application
   from = "/*"
   to = "/index.html"
   status = 200
