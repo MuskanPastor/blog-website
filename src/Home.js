@@ -4,7 +4,7 @@ import useFetch from "./UseFetch.js"
 
 
 const Home = () => { 
-    const{blogs,isPending,error}=useFetch("http://localhost:5000/blogs")
+    const{blogs,isPending,error}=useFetch("https://cozy-squirrel-b2befd.netlify.app/")
     return ( 
         <div className="home">
           {
